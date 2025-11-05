@@ -2,6 +2,88 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## 20.0.0 (2025-11-05)
+
+
+### ⚠ BREAKING CHANGES
+
+* Migrate to Angular 17
+* migration to standalone components
+* more predictable directive and config names
+feat: partial global config override allowed
+refactor: stronger typing
+refactor: using the standard Angular project structure
+
+### build
+
+* Angular 17 + Update .nvmrc ([3e01abe](https://github.com/guillermodelagala/ngx-currency/commit/3e01abe2e2ee1c10fb9f36a5b0240c2d94e54040))
+
+
+### Features
+
+* **addNumber:** Adds support for natural input mode ([7a18ef6](https://github.com/guillermodelagala/ngx-currency/commit/7a18ef68c4e239f11f4d278323764476c6e605d4))
+* **addNumber:** Typing decimal or thousands advances cursor ([975e782](https://github.com/guillermodelagala/ngx-currency/commit/975e78246de512e0ef593a403901da88082cf5ba))
+* allow currencyMask to be used as input instead of options ([daf0c06](https://github.com/guillermodelagala/ngx-currency/commit/daf0c06a45db94fdc9e6e52455b54969c291d4bb))
+* **applyMask:** Adds support for min and max ([6843124](https://github.com/guillermodelagala/ngx-currency/commit/684312425a49723550e9c9bf0bf357ee9acb9366))
+* **build:** Install and setup ng-packagr ([c718bae](https://github.com/guillermodelagala/ngx-currency/commit/c718bae877243547bc97c1158a020e2a535ed29e))
+* **build:** Remove unused NPM build scripts ([bbf4d69](https://github.com/guillermodelagala/ngx-currency/commit/bbf4d69b66c42c0ccba15e2b3950a604755b24e1))
+* Currrency Mask and test folder ([f0e04b0](https://github.com/guillermodelagala/ngx-currency/commit/f0e04b0a86bf1d6e011498ffd28417ab2d64391e))
+* demo app ([599106f](https://github.com/guillermodelagala/ngx-currency/commit/599106f068c8fb00703b578e554d7d651a941c19))
+* gh-pages branch up ([b1210af](https://github.com/guillermodelagala/ngx-currency/commit/b1210afede47c1fb0116e7a332bd7aefa6b9cd9a))
+* input field added in demo app ([7f29ae9](https://github.com/guillermodelagala/ngx-currency/commit/7f29ae92674a3753af877d10cd45b5f3f9a90f0e))
+* migrate to Angular 15 ([bb46fbe](https://github.com/guillermodelagala/ngx-currency/commit/bb46fbe1f3c91a4e4afe01febd875d7c2afc6274))
+* migrate to Angular 16 ([3bbd51e](https://github.com/guillermodelagala/ngx-currency/commit/3bbd51ed4849bb713f892fcf6b408aa0c4778ca9))
+* migrate to Angular 17 ([52bc42e](https://github.com/guillermodelagala/ngx-currency/commit/52bc42ee186141eca792762c734b3220768c0e61))
+* migrate to Angular 18 ([a11fdc3](https://github.com/guillermodelagala/ngx-currency/commit/a11fdc317ce2328c24d7bb65d237c3d839bc0a59))
+* migrate to Angular 19 ([d61a64b](https://github.com/guillermodelagala/ngx-currency/commit/d61a64b7f2a7b7bd3d4d620ae7af4af9347612d6))
+* suppoer persian and arabic number ([e3f0ff6](https://github.com/guillermodelagala/ngx-currency/commit/e3f0ff677750fd0cf49199ce1d0e62f0e8ebebbf))
+* support persian and arabic number ([28f720a](https://github.com/guillermodelagala/ngx-currency/commit/28f720a489cfab7fd111a28f5b56b3f32ddec4dd))
+* travis.yml ([90517f6](https://github.com/guillermodelagala/ngx-currency/commit/90517f61260a37f6752eeb062d0f19b0b34fbfe6))
+
+
+### Bug Fixes
+
+* .nvmrc version ([2c0246b](https://github.com/guillermodelagala/ngx-currency/commit/2c0246bed889fb073eb85299ef419c73e57ed2fe))
+* Account for negative numbers ([5542dc6](https://github.com/guillermodelagala/ngx-currency/commit/5542dc650ad2385b4410454708f0d9334e2d138f))
+* added the CurrencyMaskInputMode to the exports ([95059e6](https://github.com/guillermodelagala/ngx-currency/commit/95059e6a89a024b0ed604706afe4008ecae876b6))
+* allow backspacing of single whole numbers in Natural mode prior to the decimal ([9530c9c](https://github.com/guillermodelagala/ngx-currency/commit/9530c9c5b14467e28d8399fb18f8ccb992304b56))
+* allow negative at start of entry ([dad7b33](https://github.com/guillermodelagala/ngx-currency/commit/dad7b331749598494148997bc88db87d0ff7203b))
+* allow null for min and max ([5368031](https://github.com/guillermodelagala/ngx-currency/commit/5368031069cc918d2e6c967d9ae00396edb1f6b3))
+* allow work outside of forms ([ffcc5f3](https://github.com/guillermodelagala/ngx-currency/commit/ffcc5f3b65849397974caf20056e4d632b493c96))
+* **applyMask:** Apply mask was not considering precision ([58fb5fd](https://github.com/guillermodelagala/ngx-currency/commit/58fb5fd340cd45e9c1d44c50095e13a592f5654a))
+* **backspace:** Added functionality to move the cursor back when backspacing separators ([d5b1273](https://github.com/guillermodelagala/ngx-currency/commit/d5b1273304c4d19c8b82b555925319f3e35e982e))
+* **backspace:** Added testing ([900c67e](https://github.com/guillermodelagala/ngx-currency/commit/900c67ec34cd62ba31498565bd6b39c70305eaee))
+* **backspace:** Functionality for backspacing beginning number (edge case) ([4e2128d](https://github.com/guillermodelagala/ngx-currency/commit/4e2128d69737db4aa47b8ef48a02b65c91a886ad))
+* **Build:** Error on ngc build ([83acabe](https://github.com/guillermodelagala/ngx-currency/commit/83acabe3f705a193b47f960cfc07116825e8e021))
+* clear value = null ([d3f40e4](https://github.com/guillermodelagala/ngx-currency/commit/d3f40e487fc8e63d6f393182491fc102f29e4b39))
+* create InputHandler in constructor ([#195](https://github.com/guillermodelagala/ngx-currency/issues/195)) ([79161be](https://github.com/guillermodelagala/ngx-currency/commit/79161bebd36143e23c6c779174b4b0a3c777fd4a))
+* Ctrl+A and arrow navigation in Firefox ([af16b14](https://github.com/guillermodelagala/ngx-currency/commit/af16b146308f5fb967e78eaaa9b8087dc10d476c))
+* Delete button not clearing the value entirely. ([dfb7518](https://github.com/guillermodelagala/ngx-currency/commit/dfb751882b872d05864e7751ece91c6198955eaa))
+* delete value disregarding prefix ([f288a33](https://github.com/guillermodelagala/ngx-currency/commit/f288a33b10e8f6f7d58971ca56ced4d4473ba8d9))
+* export configuration token ([be16f02](https://github.com/guillermodelagala/ngx-currency/commit/be16f02ac772837d01b780cfa2896728addcb3d1))
+* fix android chrome support ([c718534](https://github.com/guillermodelagala/ngx-currency/commit/c7185345f8a465bb02f451e280e0311858bd7afe)), closes [#90](https://github.com/guillermodelagala/ngx-currency/issues/90) [#100](https://github.com/guillermodelagala/ngx-currency/issues/100)
+* Fixed a warning about using ngModel and formControlName ([772edf7](https://github.com/guillermodelagala/ngx-currency/commit/772edf7816b460677d4d851fbc47662606aaef06))
+* **forRoot:** Added forRoot to the module for proper default config ([c46c1c1](https://github.com/guillermodelagala/ngx-currency/commit/c46c1c1039fcd9318c89ab298018108aa1230e69))
+* Ignore special characters when validating maxLength ([0dec5e1](https://github.com/guillermodelagala/ngx-currency/commit/0dec5e1b55e94fe9ccc7b1c3ce321cb28c79cbd5))
+* ignored align in global config ([1af2dd1](https://github.com/guillermodelagala/ngx-currency/commit/1af2dd18747b21dd3112a5e87a76b1bc055b1fd5))
+* improve deletion in natural mode ([2dce31e](https://github.com/guillermodelagala/ngx-currency/commit/2dce31e5ad21c8b3cce0dbda0c8c194bb3254a84)), closes [#85](https://github.com/guillermodelagala/ngx-currency/issues/85)
+* issue with drag and drop partial selections. ([4f8044d](https://github.com/guillermodelagala/ngx-currency/commit/4f8044d70f3e7f8747a83b44551b0e006a538816))
+* issue with entering special characters. ([b7b1c59](https://github.com/guillermodelagala/ngx-currency/commit/b7b1c5945b0a02be8ecee7a0ae5017e289747d86))
+* lint ([23b3d5d](https://github.com/guillermodelagala/ngx-currency/commit/23b3d5d47786a22bd879e28edee0e8f42738c88b))
+* **ModuleWithProviders:** necessary add type ([fe6f64f](https://github.com/guillermodelagala/ngx-currency/commit/fe6f64f12f94331983e6898150383e1b0873fd15))
+* no sandbox ([f3b5ebb](https://github.com/guillermodelagala/ngx-currency/commit/f3b5ebb2c704020b2aedcda399fb98f06ded95d7))
+* peer-dependencies ([9ec91ed](https://github.com/guillermodelagala/ngx-currency/commit/9ec91ed77d462e8207fe9185ad227c7491ca87b6))
+* **README:** Updated readme to use forRoot module configuration ([48d8ed4](https://github.com/guillermodelagala/ngx-currency/commit/48d8ed45b0431752c104a19fe31e3e80ee273b5b))
+* readOnly issue ([64e3d1d](https://github.com/guillermodelagala/ngx-currency/commit/64e3d1dc6e5d8130c3eb5e51c899144a6f0b2ad2))
+* remove copyfile script from release script ([84ffbe9](https://github.com/guillermodelagala/ngx-currency/commit/84ffbe9f6ca4decefe6db79a30f3c67f3ca35b2c))
+* stack overflow issue for precision > 2 ([364644d](https://github.com/guillermodelagala/ngx-currency/commit/364644d70d27f81ffd7e420bef811a3970ca3fc7))
+* sudo: false ([5ec55f2](https://github.com/guillermodelagala/ngx-currency/commit/5ec55f236b8e29d740fc187762f13003844ec2c4))
+* swap actual and expected values in config tests ([745ee6a](https://github.com/guillermodelagala/ngx-currency/commit/745ee6a9e34116a74ef6366ba477677ab97d8f38))
+* travis error permission ([25b2352](https://github.com/guillermodelagala/ngx-currency/commit/25b2352e83e5b989ad3df6bf57d97a1d077ce93a))
+* unused import ([9bdd946](https://github.com/guillermodelagala/ngx-currency/commit/9bdd9466beb79b9182a84ce0dee986cb3e42ebc5))
+* Updated build ([b65ff3b](https://github.com/guillermodelagala/ngx-currency/commit/b65ff3b28779c01dc21b1b6b5ba22e0a1a27f953))
+* Updated directive and test ([1c4f4ce](https://github.com/guillermodelagala/ngx-currency/commit/1c4f4ce16d852ba8be257e61edb26f956bddbf5e))
+
 ## [19.0.0](https://github.com/nbfontana/ngx-currency/compare/v18.0.0...v19.0.0) (2025-01-06)
 
 
